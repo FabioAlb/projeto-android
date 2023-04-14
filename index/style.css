@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face{ 
+    font-family: 'android'; 
+    src: url('../fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor0: rgba(32, 108, 250, 0.815);
+    --cor1: rgba(32, 108, 250, 0.651);
+    --cor2: rgb(53, 53, 204);
+    --cor3: darkblue;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-titulo: 'android', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{ 
+    background-color: rgb(229, 230, 190);
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    min-width: 0px;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+header{
+     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2) );
+    background-attachment: scroll;
+    margin: 0%;
+    padding-top: 40px;
+    
+    text-align: center;
+    color: white;
+    min-height: 150px;
+    box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.308);
+    transition-duration: 0.5s;
+}
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+    font-weight: normal;
+}
+header > p{
+     text-align: center;
+     font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+nav{
+    text-align: left;
+    color: aliceblue;
+    margin: 18px 0px -9px 7px;
+    font-size: 16px;
+    padding-bottom:20px;
+    display: inline-block;
+}
+nav > a{
+    color: rgb(200, 245, 202);
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    color: black;
+    background-color: rgba(101, 154, 252, 0.932);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+main{
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 950px;
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 7px 7px 4px 0px rgba(82, 82, 82, 0.096);
+}
+main h2{
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+main h3{
+    text-align: left;
+    font-family: var(--fonte-titulo);
+    padding-left: 30px;
+    color: rgb(19, 114, 238);
+    background-image: linear-gradient(to right, rgba(19, 114, 238, 0.349), white );
+    border-radius: 15px;
+    font-weight: normal;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    font-weight: bold;
+}
+.image{
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    min-width: 250px;
+}
+main a{
+    background-color: rgba(32, 108, 250, 0.322);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+}
+main a:hover{
+    text-decoration: underline;
+}
+.video{
+    margin: center;
+    width: 100%;   
+    padding-top: 10px;
+    padding-bottom: 54.5%;
+    background-color: var(--cor3);
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.253);
+    position: relative;
+}
+div.video >iframe{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    text-align: center;
+    background-color: rgba(32, 108, 250, 0.322);
+    text-align: auto;
+    border-radius: 15px;  
+    padding: 10px 10px 10px 10px; 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.253);
+}
+aside > ul{
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+    text-align: justify;
+}
+aside  h4{
+    background-color: darkblue;
+    color: white;   
+    border-radius: 15px 15px 0px 0px;
+    font-size: 1em; 
+    margin: -10px -10px 0px -10px;
+    padding: 8px;
+}
+aside > a{
+    text-decoration: underline;
+}
+footer{
+    background-color: var(--cor3);
+    margin-top: 16px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}   
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}      
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+}
+       
+    
