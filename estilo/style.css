@@ -13,7 +13,7 @@
     --cor3: darkblue;
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
-    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-destaque:'Bebas Neue', 'android', sans-serif;
     --fonte-titulo: 'android', sans-serif;
 }
 *{
